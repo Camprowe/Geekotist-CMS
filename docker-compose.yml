@@ -28,8 +28,6 @@ services:
     depends_on:
       database:
         condition: service_healthy
-      cache:
-        condition: service_healthy
     environment:
       SECRET: "replace-with-secure-random-value"
 
